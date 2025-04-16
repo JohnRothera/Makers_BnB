@@ -1,42 +1,59 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
+  height: 100%;
+  margin-top: 5%;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1, h2, h3 {
+  color: rgb(14, 69, 69);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard {
+  display: flex;
+  margin-top: 7%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#profilePic {
+  margin-top: 10%;
+  max-width: 30%;
 }
 
-.card {
-  padding: 2em;
+.property-img {
+  margin-top: 10%;
+  width: 80%;
+  /* Adjust as needed */
+  height: 50%;
+  /* Ensures uniform size */
+  object-fit: cover;
+  /* Keeps aspect ratio while filling the area */
+  border-radius: 8px;
+  /* Optional: Adds rounded corners */
 }
 
-.read-the-docs {
-  color: #888;
+#listings {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.property-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background-color: rgba(36, 181, 181, 0.497);
+  border-radius: 10px;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+#profile {
+  border: 2px solid rgba(36, 181, 181, 0.497);
+  border-radius: 10px;
+  margin-right: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
