@@ -1,13 +1,8 @@
 import LikeButton from "./LikeButton";
 import { useState } from "react";
+import { PropertyAttributes } from "./types";
 
-type PropertyTileAttributes = {
-  image: string;
-  name: string;
-  id?: number;
-};
-
-const PropertyTile = ({ image, name }: PropertyTileAttributes) => {
+const PropertyTile = ({ image, name }: PropertyAttributes) => {
   const [liked, setLiked] = useState(false);
 
   return (
