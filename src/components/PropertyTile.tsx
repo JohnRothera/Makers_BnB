@@ -3,7 +3,7 @@ import { useState } from "react";
 import { PropertyAttributes } from "./types";
 
 const PropertyTile = ({ image, name }: PropertyAttributes) => {
-  const [liked, setLiked] = useState(false);
+  const [liked, setLiked] = useState<boolean>(false);
 
   return (
     <div className="property-tile">

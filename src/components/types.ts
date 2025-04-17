@@ -1,11 +1,11 @@
-export type userProfile = {
+export interface userProfile {
   username: string;
   bio: string;
   mostRecentStay: PropertyAttributes;
-};
+}
 
-export type PropertyAttributes = {
+export interface PropertyAttributes {
   image: string;
   name: string;
   id?: number;
-};
+}
